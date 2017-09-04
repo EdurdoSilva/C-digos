@@ -1,0 +1,11 @@
+temp = open("temp.txt","w")
+for i in range(100):
+    temp.write("aula de python")
+temp.close()
+print("Arquivo criado com sucesso!")
+
+print("Lendo Arquivo:")
+arquivo = open('temp.txt','r')
+for linha in arquivo:
+    print(linha)
+arquivo.close
