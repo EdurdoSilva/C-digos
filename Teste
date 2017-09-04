@@ -1,0 +1,21 @@
+temp = open("dolar.txt","w")
+for i in range(100):
+    temp.write("%i dólares valem %f reais \n"%(i,i*1.70))
+temp.close()
+print('Arquivo criado com sucesso!')
+
+print('Lendo:')
+
+buscar = 'valem'
+def procurar():
+    arquivo = open('dolar.txt','r')
+    for linha in arquivo:
+        if buscar in linha:
+            encontrado=True
+            print('encontrado')
+            break
+        else:
+            encontrado = False
+if procurar():
+    print('achado')
+
